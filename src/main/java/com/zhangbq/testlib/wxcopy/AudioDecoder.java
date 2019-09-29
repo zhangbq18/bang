@@ -176,13 +176,13 @@ public class AudioDecoder {
 //        -i test.mp3
                 commend.add("-y");
                 commend.add("-f");
-                commend.add("s16le");
+                commend.add("s16be");
                 commend.add("-ar");
                 commend.add("11025");
                 commend.add("-ac");
                 commend.add("2");
                 commend.add("-acodec");
-                commend.add("pcm_s16be");
+                commend.add("pcm_s16le");
                 commend.add("-i");
                 commend.add(pcmPath);
                 commend.add(target);
